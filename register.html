@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register &mdash; Justin Timberlake </title>
+<link rel="icon" href="images/logo.png" type="image/icon type">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+<link rel="stylesheet" type="text/css" href="css/register.css">
+<script src="js/reload.js"></script>
+</head>
+<body>
+      <nav class="navbar navbar-expand-sm justify-content-center bg-warning text-light">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            This is a fan website created for a college project.
+          </li>
+        </ul>
+      </nav>
+      <header class="main-header">
+        <div class="main-header-inner">
+          <div class="main-nav">
+              <a href="index.html">
+                  <img class="img-responsive desktop" src="https://justintimberlake.com/wp-content/themes/justintimberlake/assets/images/2018_0125_10523_7927.svg" alt="Justin Timberlake">
+                  <img class="img-responsive mobile" src="https://justintimberlake.com/wp-content/themes/justintimberlake/assets/images/2018_0125_10523_7927_alt.svg" alt="Justin Timberlake">
+              </a>
+          </div>
+          <div class="side-nav justify-content-end">
+              <a href="bio.html">Biography</a>
+              <a href="tracks.html">Tracks</a>
+              <a href="awards.html">Awards</a>
+              <a href="login.html" >Log In</a>
+          </div>
+        </div>
+      </header>
+      <div class="login-margin">
+        <div class="conatiner-fluid">
+          <div class="row">
+            <div class="col-lg-6 text-light mt-3">
+              <div class="first-tab">
+                <h4>Already a member?</h4>
+                <p>Sign in and get going.</p>
+                <a href="login.html"><button type="button" class="btn btn-light btn-block text-dark">Login</button></a>
+              </div>
+            </div>
+            <div class="col-lg-6 bg-white mt-3">
+              <div class="second-tab">
+                <h5>Create an Account</h5>
+                <div class="second-tab-form">
+                <form action="register_success.html" class="needs-validation" method="POST" novalidate>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="uname" placeholder="Username" name="uname" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="pwd1" placeholder="Password" name="pswd1" required>
+                    <div class="invalid-feedback">Please fill out the field.</div>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="pwd2" placeholder="Confirm Password" name="pswd2" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Password must be same to each other.</div>
+                  </div>
+                  <div class="form-group form-check" style="margin-right: 220px;">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="remember">Remember me?
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-dark btn-block">Register</button>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+      <footer class="main-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 py-5">
+              <div class="mb-3 flex-center">
+                <a class="fb-ic" href="#"><i class="fab fa-facebook fa-lg white-text fa-2x"></i></a>
+                <a class="tw-ic" href="#"><i class="fab fa-twitter fa-lg white-text fa-2x"></i></a>
+                <a class="ins-ic" href="#/"><i class="fab fa-instagram fa-lg white-text fa-2x"></i></a>
+                <a class="yt-ic" href="#"><i class="fab fa-youtube fa-lg white-text fa-2x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-colophon mb-2">
+          <a href="#">FAQs</a> / <a href="#" target="">Privacy Policy</a> / <a href="#" target="">Terms of Use</a> / All Rights Reserved / Site by Rachit</a>
+        </div>
+        <div class="backgroun-color:black;height:20px;width:100%;position:absolute;"><br></div>
+      </footer>
+</body>
+</html>
