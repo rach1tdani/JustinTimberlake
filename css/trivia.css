@@ -5,6 +5,7 @@ html, body {
 }
 
 body {
+    background-color: #000;
     font-family: "Source Sans Pro",sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -102,6 +103,41 @@ img {
     margin-right: 30px;
     text-decoration: none !important;
 }
+
+.container {
+    background-color: black;
+    padding: 60px 0 30px;
+    text-align: center;
+    max-width: 1676px;
+    width: 100%;
+}
+
+.container h1, h2, h3, h4, h5, h6 {
+    font-family: "groteskblack",sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+h2.chunk{
+    font-family: "groteskblack",sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding: 0;
+    position: relative;
+    color: white;
+}
+
+.container hr{
+    background-color: grey;
+    width: 800px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 
 /* ----------------------- */
 
